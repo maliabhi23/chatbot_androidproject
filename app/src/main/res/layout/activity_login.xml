@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Login">
+
+    <!-- TextView for heading -->
+    <TextView
+        android:layout_width="239dp"
+        android:layout_height="68dp"
+        android:layout_margin="13dp"
+        android:layout_marginLeft="33in"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="53dp" />
+
+    <!-- Edit text for email -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_corner"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:padding="19dp"
+        android:inputType="text"
+        android:hint="Enter your Email"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/forgetpass"
+        android:layout_width="match_parent"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="244dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Forget Password"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Edit text for password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_corner"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:padding="19dp"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="23dp" />
+
+    <!-- Button for Login with text "Login" -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="#38B4f1"
+        android:padding="18dp"
+        android:textSize="20sp"
+        android:text="Login"
+        android:layout_marginBottom="23dp" />
+
+    <!-- FrameLayout to center ProgressBar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="#38B4f1"
+        android:padding="18dp"
+        android:textSize="20sp"
+        android:text="register" />
+
+</LinearLayout>
